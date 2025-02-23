@@ -1,21 +1,3 @@
-import random
-import time
-
-def imprimir_cuadricula(robot, objetivo):
-    for fila in range(5):
-        for columna in range(5):
-            if (fila, columna) == robot:
-                print(" R ", end="")  
-            elif (fila, columna) == objetivo:
-                print(" O ", end="")  
-            else:
-                print(" . ", end="")  
-        print()
-    print("-" * 15)
-
-def mover_robot(robot, objetivo):
-    rx, ry = robot
-    ox, oy = objetivo
 def diagnostico():
     print("Bienvenido al sistema de diagnóstico médico básico.")
     
